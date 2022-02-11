@@ -41,4 +41,5 @@ extension Color {
     static let unbleachedSilk = Color("Unbleached Silk")
     static let unbleachedSilkShadow = Color("Unbleached Silk Shadow")
     static let textFieldColor = Color("Text Field Color")
+    static let buttonColor = Color("Button Color")
 }

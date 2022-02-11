@@ -15,6 +15,9 @@
 		3601AA5527B4F63D00C34ABD /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601AA5427B4F63D00C34ABD /* TextFieldExtension.swift */; };
 		3601AA5727B4FB6600C34ABD /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3601AA5627B4FB6600C34ABD /* Colors.xcassets */; };
 		3601AA5E27B5298000C34ABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3601AA5D27B5298000C34ABD /* README.md */; };
+		3601AA6027B5AD4700C34ABD /* ZipCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601AA5F27B5AD4600C34ABD /* ZipCodes.swift */; };
+		3601AA6627B5AEDB00C34ABD /* ZipCodesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3601AA6527B5AEDB00C34ABD /* ZipCodesModel.swift */; };
+		362CE00527B5FAF7000BAFBE /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362CE00427B5FAF7000BAFBE /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		3601AA5427B4F63D00C34ABD /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		3601AA5627B4FB6600C34ABD /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3601AA5D27B5298000C34ABD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3601AA5F27B5AD4600C34ABD /* ZipCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodes.swift; sourceTree = "<group>"; };
+		3601AA6527B5AEDB00C34ABD /* ZipCodesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodesModel.swift; sourceTree = "<group>"; };
+		362CE00427B5FAF7000BAFBE /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,12 @@
 		3601AA4327B4E5E600C34ABD /* ZippyZipCodes */ = {
 			isa = PBXGroup;
 			children = (
+				3601AA6427B5AECA00C34ABD /* Controllers */,
+				3601AA6327B5AD8200C34ABD /* Model */,
 				3601AA4427B4E5E600C34ABD /* ZippyZipCodesApp.swift */,
 				3601AA4627B4E5E600C34ABD /* ContentView.swift */,
-				3601AA4827B4E5F000C34ABD /* Assets.xcassets */,
-				3601AA5227B4EC0800C34ABD /* ColorExtension.swift */,
-				3601AA5427B4F63D00C34ABD /* TextFieldExtension.swift */,
-				3601AA5627B4FB6600C34ABD /* Colors.xcassets */,
+				3601AA6127B5AD5F00C34ABD /* Extensions */,
+				3601AA6227B5AD7600C34ABD /* Resources */,
 				3601AA4A27B4E5F000C34ABD /* Preview Content */,
 			);
 			path = ZippyZipCodes;
@@ -77,6 +83,41 @@
 				3601AA4B27B4E5F000C34ABD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3601AA6127B5AD5F00C34ABD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3601AA5227B4EC0800C34ABD /* ColorExtension.swift */,
+				3601AA5427B4F63D00C34ABD /* TextFieldExtension.swift */,
+				362CE00427B5FAF7000BAFBE /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3601AA6227B5AD7600C34ABD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3601AA5627B4FB6600C34ABD /* Colors.xcassets */,
+				3601AA4827B4E5F000C34ABD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3601AA6327B5AD8200C34ABD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3601AA5F27B5AD4600C34ABD /* ZipCodes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3601AA6427B5AECA00C34ABD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3601AA6527B5AEDB00C34ABD /* ZipCodesModel.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3601AA6027B5AD4700C34ABD /* ZipCodes.swift in Sources */,
 				3601AA5327B4EC0800C34ABD /* ColorExtension.swift in Sources */,
 				3601AA5527B4F63D00C34ABD /* TextFieldExtension.swift in Sources */,
+				362CE00527B5FAF7000BAFBE /* ViewExtension.swift in Sources */,
 				3601AA4727B4E5E600C34ABD /* ContentView.swift in Sources */,
+				3601AA6627B5AEDB00C34ABD /* ZipCodesModel.swift in Sources */,
 				3601AA4527B4E5E600C34ABD /* ZippyZipCodesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

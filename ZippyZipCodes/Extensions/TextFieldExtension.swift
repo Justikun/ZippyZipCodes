@@ -13,7 +13,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
         configuration
             .padding(10)
             .background(Color.textFieldColor)
-            .cornerRadius(20)
+            .cornerRadius(50)
             .shadow(color: .unbleachedSilkShadow,
                     radius: 2,
                     x: 0,
